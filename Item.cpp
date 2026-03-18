@@ -7,6 +7,7 @@ int Item::totalItems = 0;
 Item::Item(std::string name, int value)
     : name(name), value(value)
 {
+
 }
  
 int Item::getTotalItems() {
@@ -27,6 +28,6 @@ int Item::getValue() const {
  
 void Item::display() const {
 
-    std::cout << "  " << name <<  (Value: " << value << ")" << std::endl;
+    std::cout << "  [" << name << "] (Value: " << value << ")" << std::endl;
 }
  
